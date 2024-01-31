@@ -1,46 +1,11 @@
 import { FaSquarePollHorizontal } from "react-icons/fa6";
-import { FaTrello } from "react-icons/fa";
-import { IoGridOutline } from "react-icons/io5";
-import { GoPerson } from "react-icons/go";
-import { HiCog } from "react-icons/hi";
-import { GrUpgrade } from "react-icons/gr";
 
 import DashboardButton from "./DashboardButton";
 import Board from "./Board";
 
+import { workspaceButtons, boards } from "../data";
+
 export default function YourWorkspaces() {
-  const workspaceButtons = [
-    {
-      icon: <FaTrello />,
-      title: "Boards",
-    },
-    {
-      icon: <IoGridOutline />,
-      title: "Views",
-    },
-    {
-      icon: <GoPerson />,
-      title: "Members",
-    },
-    {
-      icon: <HiCog />,
-      title: "Settings",
-    },
-    {
-      icon: <GrUpgrade />,
-      title: "Upgrade",
-    },
-  ];
-
-  const boards = [
-    { title: "Grp 5 - 3ITE", className: "bg-black text-white" },
-    { title: "Lorem ipsum", className: "bg-red-900 text-white" },
-    { title: "Dolor sit", className: "bg-yellow-900 text-white" },
-    { title: "Amet consectatur", className: "bg-blue-900 text-white" },
-    { title: "Adipisicing elit", className: "bg-green-900 text-white" },
-    { title: "Maiores optio", className: "bg-violet-900 text-white" },
-  ];
-
   return (
     <div className="flex flex-col gap-6">
       <h1 className="mt-6 font-bold uppercase">Your Workspaces</h1>

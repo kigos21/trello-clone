@@ -1,25 +1,9 @@
-import { FaTrello } from "react-icons/fa";
-import { HiTemplate } from "react-icons/hi";
-import { GoHomeFill } from "react-icons/go";
-import { FaSquarePollHorizontal } from "react-icons/fa6";
-
 import SideNavButton from "./SideNavButton";
 import WorkspaceDropdown from "./WorkspaceDropdown";
 
+import { sideNavButtons, workspaces } from "../data";
+
 export default function DashboardSideNav() {
-  const sideNavButtons = [
-    { icon: <FaTrello />, isActive: true, title: "Boards" },
-    { icon: <HiTemplate />, isActive: false, title: "Templates" },
-    { icon: <GoHomeFill />, isActive: false, title: "Home" },
-  ];
-
-  const workspaces = [
-    {
-      icon: <FaSquarePollHorizontal className="text-2xl" />,
-      title: "ICS26010 - SE Group 5",
-    },
-  ];
-
   return (
     <div>
       <div className="flex flex-col gap-1 border-b border-b-slate-700 pb-1">

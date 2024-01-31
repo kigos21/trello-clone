@@ -1,25 +1,13 @@
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { FaTrello } from "react-icons/fa";
-import { IoIosNotificationsOutline } from "react-icons/io";
-import { IoHelpCircleOutline } from "react-icons/io5";
-import { RxAvatar } from "react-icons/rx";
 
 import NavButton from "./NavButton";
 import NavDropdown from "./NavDropdown";
 import NavCircleButton from "./NavCircleButton";
 
-export default function Header() {
-  return (
-    <div className="flex justify-between border-b border-b-slate-700 p-2 text-sm">
-      <LeftSideNav />
-      <RightSideNav />
-    </div>
-  );
-}
+import { dropdownTitles, circleIcons } from "../data";
 
 function LeftSideNav() {
-  const dropdownTitles = ["Workspaces", "Recent", "Starred", "Templates"];
-
   return (
     <div className="flex items-center gap-2">
       <NavButton>
@@ -55,17 +43,18 @@ function RightSideNav() {
         className="rounded-md border border-slate-700 bg-[#22272b] px-3"
       />
 
-      <NavCircleButton>
-        <IoIosNotificationsOutline className="text-xl" />
-      </NavCircleButton>
+      {circleIcons.map((icon, i) => (
+        <NavCircleButton key={i} icon={icon.icon} />
+      ))}
+    </div>
+  );
+}
 
-      <NavCircleButton>
-        <IoHelpCircleOutline className="text-xl" />
-      </NavCircleButton>
-
-      <NavCircleButton>
-        <RxAvatar className="text-xl" />
-      </NavCircleButton>
+export default function Header() {
+  return (
+    <div className="flex justify-between border-b border-b-slate-700 p-2 text-sm">
+      <LeftSideNav />
+      <RightSideNav />
     </div>
   );
 }
