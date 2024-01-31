@@ -1,5 +1,6 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+// eslint-disable-next-line react/prop-types
 export default function WorkspaceDropdown({ icon, title }) {
   return (
     <button className="flex w-full items-center justify-between p-3">
