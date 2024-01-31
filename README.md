@@ -1,8 +1,36 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is made with Vite.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+1. Clone the repo and change directory in it.
+
+   ```sh
+   git clone https://github.com/kigos21/trello-clone.git
+   cd trello-clone
+   ```
+
+2. Install npm packages.
+
+   ```sh
+   npm install
+   ```
+
+3. Start the development server.
+
+   ```sh
+   npm run dev
+   ```
+
+4. Open http://localhost:5173 with your browser to see the result.
