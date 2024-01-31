@@ -10,7 +10,7 @@ import NavCircleButton from "./NavCircleButton";
 
 export default function Header() {
   return (
-    <div className="flex justify-between p-2 text-sm">
+    <div className="flex justify-between border-b border-b-slate-700 p-2 text-sm">
       <LeftSideNav />
       <RightSideNav />
     </div>
@@ -37,7 +37,7 @@ function LeftSideNav() {
         </NavButton>
       ))}
 
-      <button className="rounded-md bg-blue-300 px-3 py-1 text-[#172b4d]">
+      <button className="rounded-md bg-[#579dff] px-3 py-1 text-[#172b4d] hover:bg-blue-300">
         Create
       </button>
     </div>
