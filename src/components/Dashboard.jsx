@@ -1,4 +1,5 @@
 import DashboardSideNav from "./DashboardSideNav";
+import YourWorkspaces from "./YourWorkspaces";
 
 export default function Dashboard() {
   return (
@@ -7,7 +8,9 @@ export default function Dashboard() {
         <DashboardSideNav />
       </div>
 
-      <div className="min-h-[80dvh] basis-3/4 border border-slate-700"></div>
+      <div className="min-h-[80dvh] basis-3/4">
+        <YourWorkspaces />
+      </div>
     </div>
   );
 }

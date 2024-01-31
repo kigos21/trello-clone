@@ -14,7 +14,10 @@ export default function DashboardSideNav() {
   ];
 
   const workspaces = [
-    { icon: <FaSquarePollHorizontal />, title: "ICS26010 - SE Group 5" },
+    {
+      icon: <FaSquarePollHorizontal className="text-2xl" />,
+      title: "ICS26010 - SE Group 5",
+    },
   ];
 
   return (
