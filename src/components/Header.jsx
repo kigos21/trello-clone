@@ -9,7 +9,7 @@ import NavCircleButton from "./NavCircleButton";
 
 export default function Header() {
   return (
-    <div className="flex justify-between p-2 text-sm text-[#a1adbb]">
+    <div className="flex justify-between p-2 text-sm">
       <LeftSideNav />
       <RightSideNav />
     </div>
