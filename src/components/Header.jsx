@@ -1,4 +1,5 @@
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
+import { FaTrello } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { IoHelpCircleOutline } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
@@ -25,7 +26,8 @@ function LeftSideNav() {
         <BsFillGrid3X3GapFill className="my-1" />
       </NavButton>
 
-      <NavButton>
+      <NavButton className="py-0 text-lg">
+        <FaTrello className="inline" />
         <span className="font-bold">Trello</span>
       </NavButton>
 
