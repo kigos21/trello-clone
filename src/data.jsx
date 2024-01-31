@@ -9,6 +9,7 @@ import { IoGridOutline } from "react-icons/io5";
 import { GoPerson } from "react-icons/go";
 import { HiCog } from "react-icons/hi";
 import { GrUpgrade } from "react-icons/gr";
+
 export const dropdownTitles = ["Workspaces", "Recent", "Starred", "Templates"];
 
 export const circleIcons = [
@@ -25,7 +26,7 @@ export const sideNavButtons = [
 
 export const workspaces = [
   {
-    icon: <FaSquarePollHorizontal className="text-2xl" />,
+    icon: <FaSquarePollHorizontal className="text-2xl text-green-500" />,
     title: "ICS26010 - SE Group 5",
   },
 ];

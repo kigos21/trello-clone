@@ -12,7 +12,7 @@ export default function YourWorkspaces() {
 
       <div className="flex justify-between">
         <div className="flex items-center gap-2">
-          <FaSquarePollHorizontal className="text-2xl" />
+          <FaSquarePollHorizontal className="text-2xl text-green-500" />
           <span className="font-semibold">ICS26010 - SE Group 5</span>
         </div>
 
