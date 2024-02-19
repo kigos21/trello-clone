@@ -3,6 +3,7 @@ import { GoStar, GoStarFill } from "react-icons/go";
 // eslint-disable-next-line react/prop-types
 export default function Board({ title, className, isFavorite, handleClick }) {
   return (
+    // conditional rendering
     <div className="relative">
       {isFavorite != null && (
         <button

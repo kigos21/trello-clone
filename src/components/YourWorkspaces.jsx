@@ -65,6 +65,7 @@ export default function YourWorkspaces() {
       </div>
 
       <h1 className="mt-6 font-bold uppercase">FAVORITES</h1>
+      {/* conditional rendering */}
       {favorites.length === 0 && (
         <p className="italic">
           Click the star icon to start adding to your favorites.
