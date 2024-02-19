@@ -44,7 +44,13 @@ function RightSideNav() {
       />
 
       {circleIcons.map((icon, i) => (
-        <NavCircleButton key={i} icon={icon.icon} />
+        <>
+          {i === 0 ? (
+            <NavCircleButton key={i} icon={icon.icon} notificationCount={"9"} />
+          ) : (
+            <NavCircleButton key={i} icon={icon.icon} />
+          )}
+        </>
       ))}
     </div>
   );
