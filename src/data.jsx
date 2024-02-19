@@ -55,10 +55,34 @@ export const workspaceButtons = [
 ];
 
 export const boards = [
-  { title: "Grp 5 - 3ITE", className: "bg-black text-white" },
-  { title: "Lorem ipsum", className: "bg-red-900 text-white" },
-  { title: "Dolor sit", className: "bg-yellow-900 text-white" },
-  { title: "Amet consectatur", className: "bg-blue-900 text-white" },
-  { title: "Adipisicing elit", className: "bg-green-900 text-white" },
-  { title: "Maiores optio", className: "bg-violet-900 text-white" },
+  {
+    title: "Grp 5 - 3ITE",
+    className: "bg-black text-white",
+    isFavorite: false,
+  },
+  {
+    title: "Lorem ipsum",
+    className: "bg-red-900 text-white",
+    isFavorite: false,
+  },
+  {
+    title: "Dolor sit",
+    className: "bg-yellow-900 text-white",
+    isFavorite: false,
+  },
+  {
+    title: "Amet consectatur",
+    className: "bg-blue-900 text-white",
+    isFavorite: false,
+  },
+  {
+    title: "Adipisicing elit",
+    className: "bg-green-900 text-white",
+    isFavorite: false,
+  },
+  {
+    title: "Maiores optio",
+    className: "bg-violet-900 text-white",
+    isFavorite: false,
+  },
 ];
